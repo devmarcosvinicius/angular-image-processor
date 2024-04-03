@@ -1,0 +1,56 @@
+$bg-color: #344460ED;
+$font-color: #FFBC67;
+$font-color-hover: #FFBC67D8;
+$secondary-color: #AC6C82;
+
+.list {
+  > ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+
+    > li {
+      margin: 16px 16px;
+      padding: 8px 15px;
+
+      > a {
+        text-decoration: none;
+      }
+
+    }
+
+    > li:hover {
+      background-color: rgba(255, 255, 255, 0.10);
+      border-radius: 20px;
+    }
+
+  }
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+
+  .navbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    font-weight: bolder;
+
+    > .navbar__left-list {
+      @extend .list;
+    }
+
+    > .navbar__right-list {
+      @extend .list;
+    }
+
+    > .navbar__logo {
+      margin: 16px 32px;
+      font-size: 24px;
+    }
+
+  }
+}

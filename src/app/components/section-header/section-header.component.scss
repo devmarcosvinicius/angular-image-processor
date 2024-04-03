@@ -1,0 +1,35 @@
+.tools-header__container {
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+  width: 90%;
+
+  > .tools-header__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > .tools-header__label {
+      background-color: #5463bf;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      margin-bottom: 10px;
+      padding: 10px 30px 10px 30px;
+    }
+
+    > .tools-header__title {
+      font-size: 3rem;
+      color: #fff;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+  }
+
+}

@@ -1,0 +1,49 @@
+.tools-first-section {
+  display: flex;
+  flex-direction: column;
+  padding: 160px 0;
+
+  > .tools-first-section__container {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+    width: 90%;
+
+    > .tools-first-section__cards {
+      margin: auto;
+      margin-top: 30px;
+      max-width: 1440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
+      padding: 0 68px 42px;
+
+      > .tools-first-section__cards-container {
+        display: flex;
+        //justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 14px;
+
+        //background: #fff;
+        //flex-grow: 0;
+        //flex-shrink: 0;
+        //flex-basis: calc(16.666% - 4px);
+        //border: 1px solid #f5f5fa;
+        //margin: 2px;
+        //overflow: hidden;
+        //transition: box-shadow .4s ease-out, background-color .4s ease-out;
+        //z-index: 1;
+        //border-radius: 4px;
+        //box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+
+      }
+
+    }
+
+  }
+
+}

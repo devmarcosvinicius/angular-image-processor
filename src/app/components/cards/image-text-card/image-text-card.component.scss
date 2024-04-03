@@ -1,0 +1,38 @@
+.image-text-card__container {
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0)) no-repeat 50% 50%;
+  background-size: 200% 200%;
+  border-radius: 30px;
+  max-width: 315px;
+  //min-width: 340px;
+  padding: 20px 20px 50px 20px;
+  position: relative;
+  transition: all .15s linear;
+  flex-basis: calc(25% - 4px);
+
+  > img {
+    border-radius: 18px;
+    height: auto;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  > h3 {
+    color: #ffffffee;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 20px;
+  }
+
+  > p {
+    color: hsla(0, 0%, 100%, .7);
+    margin: 10px 0 0;
+    font-weight: 600;
+  }
+
+}
+
+.image-text-card__container:hover {
+  color: #9baaff;
+  background-position: 0 0;
+}
