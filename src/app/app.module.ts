@@ -17,6 +17,8 @@ import { LeftImageCardComponent } from './components/cards/left-image-card/left-
 import { FooterComponent } from './components/footer/footer.component';
 import { ToolsFirstSectionComponent } from './components/tools/tools-first-section/tools-first-section.component';
 import { UploadBoxComponent } from './components/upload-box/upload-box.component';
+import { SideMenuComponent } from './components/tools/side-menu/side-menu.component';
+import { BottomOptionsComponent } from './components/tools/bottom-options/bottom-options.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { UploadBoxComponent } from './components/upload-box/upload-box.component
     LeftImageCardComponent,
     FooterComponent,
     ToolsFirstSectionComponent,
-    UploadBoxComponent
+    UploadBoxComponent,
+    SideMenuComponent,
+    BottomOptionsComponent,
   ],
   imports: [
     BrowserModule,

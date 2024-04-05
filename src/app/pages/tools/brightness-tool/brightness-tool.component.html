@@ -1,3 +1,21 @@
 <section>
-  <app-upload-box></app-upload-box>
+  <div class="brightness-tool__container">
+    <app-upload-box *ngIf="!isImageLoaded"></app-upload-box>
+
+    <div class="brightness-tool__edit-container" *ngIf="isImageLoaded">
+      <div class="bottom-options__container">
+        <app-bottom-options></app-bottom-options>
+      </div>
+
+      <div class="side-menu__container">
+        <app-side-menu *ngIf="isImageLoaded"></app-side-menu>
+      </div>
+
+      <div *ngIf="isImageLoaded" class="image-preview">
+        <img [src]="imageURL" alt="Imagem enviada pelo usuário.">
+      </div>
+
+    </div>
+
+  </div>
 </section>

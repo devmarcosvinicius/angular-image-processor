@@ -1,0 +1,78 @@
+.side-menu__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  z-index: 100;
+
+  background-color: #292c31;
+
+  .side-menu__title {
+    background-color: #24262b;
+    cursor: default;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+
+    > .side-menu__cancel-icon {
+      cursor: pointer;
+      height: 44px;
+      opacity: var(--normal-opacity);
+      padding: 10px;
+      position: absolute;
+      transition: all .15s linear;
+      width: 44px;
+      right: 0;
+      top: 0;
+    }
+
+  }
+
+  > .side-menu__resize-settings__container {
+    height: 100%;
+    overflow-anchor: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    scrollbar-width: none;
+    padding: 10px;
+
+    > .side-menu__resize-settings {
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+      padding: 19px;
+      background-color: #272a2e;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      transition: border .15s linear;
+
+      > label {
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+        line-height: 32px;
+      }
+
+    }
+
+  }
+
+  > .side-menu__bottoms {
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+}
